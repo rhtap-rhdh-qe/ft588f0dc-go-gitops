@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ft588f0dc-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ft588f0dc-go 
+  name: ft588f0dc-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: ft588f0dc-go 
